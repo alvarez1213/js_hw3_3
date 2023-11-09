@@ -13,12 +13,10 @@ for (const font of fontElements) {
             if (font.getAttribute('data-size') === 'small') {
                 book.classList.add('book_fs-small')
                 book.classList.remove('book_fs-big')
-            }
-            if (font.getAttribute('data-size') === 'big') {
+            } else if (font.getAttribute('data-size') === 'big') {
                 book.classList.add('book_fs-big')
                 book.classList.remove('book_fs-small')
-            }
-            if (font.getAttribute('data-size') === null) {
+            } else {                
                 book.classList.remove('book_fs-big')
                 book.classList.remove('book_fs-small')
             }
